@@ -34,6 +34,7 @@ As a part of assignment / challenge consideration, I did the following tasks:
 * I made sure that the website works at all window widths / sizes.
 
 As extra / bonus challenge, I performed the following tasks:
-* I used a Bootstrap theme to customize your website.
-* I used meaningful glyphicons / material-icons next to links in the header.
-* I created visualization navigation on every visualizations page with an active state.
+* Used a Bootstrap theme to customize your website.
+* Used meaningful glyphicons / material-icons next to links in the header.
+* Added extra visualizations
+* Created visualization navigation on every visualizations page with an active state.

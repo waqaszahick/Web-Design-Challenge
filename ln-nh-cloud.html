@@ -19,19 +19,18 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" style="color: #0A978A;" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <a class="nav-link dropdown-toggle"style="color: #0A978A;" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Plot
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
             <a class="dropdown-item" target="_self" href="temperature.html"><i class="material-icons" style="font-size: 15px" style="color:blue">ac_unit</i> Max Temperature</a>
             <a class="dropdown-item" target="_self" href="humidity.html"><i class="material-icons" style="font-size: 15px" style="color:blue">opacity</i> Humidity</a>
             <a class="dropdown-item" target="_self" href="cloud.html"><i class="material-icons" style="font-size: 15px" style="color:blue">cloud</i> Cloudiness</a>            
-            <a class="dropdown-item" target="_self" href="wind.html"><i class="material-icons" style="font-size: 15px" style="color:blue">tour</i> Wind Speed</a>
+            <a class="dropdown-item" target="_self" href="wind.html"><i class="material-icons" style="font-size: 15px" style="color:blue">tour</i> Wind Speed</a>          
             <a class="dropdown-item" target="_self" href="ln-nh-temp.html"><i class="material-icons" style="font-size: 15px" style="color:blue">trending_up</i>Linear Regression:</br>Northern Hemisphere</br>Temperature vs. Latitude</a>
             <a class="dropdown-item" target="_self" href="ln-nh-humid.html"><i class="material-icons" style="font-size: 15px" style="color:blue">trending_up</i>Linear Regression:</br>Northern Hemisphere</br>Humidity vs. Latitude</a>
             <a class="dropdown-item" target="_self" href="ln-nh-cloud.html"><i class="material-icons" style="font-size: 15px" style="color:blue">trending_up</i>Linear Regression:</br>Northern Hemisphere</br>Cloudiness vs. Latitude</a>
-            <a class="dropdown-item" target="_self" href="ln-nh-wind.html"><i class="material-icons" style="font-size: 15px" style="color:blue">trending_up</i>Linear Regression:</br>Northern Hemisphere</br>Wind Speed vs. Latitude</a>
-          </div>
+            <a class="dropdown-item" target="_self" href="ln-nh-wind.html"><i class="material-icons" style="font-size: 15px" style="color:blue">trending_up</i>Linear Regression:</br>Northern Hemisphere</br>Wind Speed vs. Latitude</a>          </div>
         </li>
         <li class="nav-item active">
           <a class="nav-link" href="comparison.html" >Comparison</a>
@@ -88,7 +87,7 @@
         </div>
         </div>
         <div id="hum">
-          <div class="content-heading"><h3 style="color: #0A978A;">Wind Speed</h3></div>
+          <div class="content-heading"><h3 style="color: #0A978A;">Northern Hemisphere Linear Regression:<br/>Cloudiness vs. Latitude</h3></div>
         <div>
           <img src="assets/images/humiditymap.png" alt="Humidity Map" class = "img-responsive" width="100%"/>
           <p>From this visualization, we can infer that the higher the latitude is, the lower the humidity gets exponentially, and vice versa.</p>
@@ -105,8 +104,9 @@
       </div>
       <div class="col-lg-4" style="background-color: aliceblue;">
         <h3 style="color: #0A978A;">Visualization</h3>
+        <br>
         <div class="row">
-          <div class="col-lg-6 col-sm-3">
+        <div class="col-lg-6 col-sm-3">
           <a onclick="replace('temp');return false">
             <img target="_blank" src="assets/images/temperaturemap.png" alt="Tempurature Map" class = "img-responsive" width = "100%" onmouseover="" style="cursor: pointer;"/>
           </a>
@@ -153,7 +153,7 @@
             <img target="_blank" src="assets/images/regression_northern_temp_vs_lat.png" alt="Tempurature Map" class = "img-responsive" width = "100%" onmouseover="" style="cursor: pointer;">
           </a>
          
-        </div>
+        </div> 
        </div>
       </div></div>
   </section>

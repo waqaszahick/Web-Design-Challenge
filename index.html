@@ -11,7 +11,7 @@
 </head>
 <body>
   <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-primary">
-    <a class="navbar-brand" href="index.html"><span class="sr-only">(current)</span>WeatherPy<br/>Web Challenge: Web Design, Web Visualization Dashboard</a>
+    <a class="navbar-brand" href="index.html"><span class="sr-only">(current)</span>LATITUDE</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -26,10 +26,14 @@
             <a class="dropdown-item" target="_self" href="temperature.html"><i class="material-icons" style="font-size: 15px" style="color:blue">ac_unit</i> Max Temperature</a>
             <a class="dropdown-item" target="_self" href="humidity.html"><i class="material-icons" style="font-size: 15px" style="color:blue">opacity</i> Humidity</a>
             <a class="dropdown-item" target="_self" href="cloud.html"><i class="material-icons" style="font-size: 15px" style="color:blue">cloud</i> Cloudiness</a>            
-            <a class="dropdown-item" target="_self" href="wind.html"><i class="material-icons" style="font-size: 15px" style="color:blue">tour</i> Wind Speed</a>
+            <a class="dropdown-item" target="_self" href="wind.html"><i class="material-icons" style="font-size: 15px" style="color:blue">tour</i> Wind Speed</a>          
+            <a class="dropdown-item" target="_self" href="ln-nh-temp.html"><i class="material-icons" style="font-size: 15px" style="color:blue">trending_up</i>Linear Regression:</br>Northern Hemisphere</br>Temperature vs. Latitude</a>
+            <a class="dropdown-item" target="_self" href="ln-nh-humid.html"><i class="material-icons" style="font-size: 15px" style="color:blue">trending_up</i>Linear Regression:</br>Northern Hemisphere</br>Humidity vs. Latitude</a>
+            <a class="dropdown-item" target="_self" href="ln-nh-cloud.html"><i class="material-icons" style="font-size: 15px" style="color:blue">trending_up</i>Linear Regression:</br>Northern Hemisphere</br>Cloudiness vs. Latitude</a>
+            <a class="dropdown-item" target="_self" href="ln-nh-wind.html"><i class="material-icons" style="font-size: 15px" style="color:blue">trending_up</i>Linear Regression:</br>Northern Hemisphere</br>Wind Speed vs. Latitude</a>
           </div>
         </li>
-        <li class="nav-item active">
+        <li class="nav-item">
           <a class="nav-link" href="comparison.html" >Comparison</a>
         </li>
         <li class="nav-item">
@@ -40,7 +44,7 @@
   </nav>
   </nav>
 
-  <section class="container mt-5 pt-5">
+  <section class="container mt-5 pt-2">
     
     <div class="row" >
       
@@ -53,12 +57,7 @@
             <div class="span4">
               <img src="assets/images/temperaturemap.png" alt="Humidity Map" class = "img-responsive graph-image"/>
               
-              <p>This is my overall 10th, first ‘Web’ (HTML, CSS) challenge. For this assignment / challenge, I created a visualization dashboard website using visualizations that I created in a past assignment (Python API: WeatherPy). Using ‘WeatherPy’ data and images, I plotted weather data.
-                In building this dashboard, I created individual pages for each plot and a means by which I can navigate between them. These pages contained the visualizations and their corresponding explanations. I also created a landing page – a page where we can see a comparison of all of the plots, and another page where we can view the data used to build them. As a part of this assignment / challenge, there were the some website requirements that I met such as: the website must consist of 7 pages total including 1. a landing page containing: an explanation of the project and links to each visualizations page where there should be a sidebar containing preview images of each plot, and clicking an image should take the user to that visualization; 2. four visualization pages, each with: a descriptive title and heading tag, the plot/visualization itself for the selected comparison and a paragraph describing the plot and its significance; 3. a "Comparisons" page that contains all of the visualizations on the same page so we can easily visually compare them and uses a Bootstrap grid for the visualizations (The grid must be two visualizations across on screens medium and larger, and 1 across on extra-small and small screens.); 4. a "Data" page that: displays a responsive table containing the data used in the visualizations, the table must be a bootstrap table component, the data must come from exporting the .csv file as HTML, or converting it to HTML.<br/>
-                The website must, at the top of every page, have a navigation menu that: has the name of the site on the left of the nav which allows users to return to the landing page from any page; contains a dropdown menu on the right of the navbar named "Plots" that provides a link to each individual visualization page; provides two more text links on the right: "Comparisons," which links to the comparisons page, and "Data," which links to the data page; is responsive and the navigation bar must have similar behavior as the screenshots "Navigation Menu".<br/>
-                As a part of assignment / challenge consideration, I did the following tasks: I used the weather data; I used Bootstrap which included using the Bootstrap navbar component for the header on every page, the bootstrap table component for the data page, and the Bootstrap grid for responsiveness on the comparison page. I used a CSS media query for the navigation menu and made sure that the website works at all window widths / sizes.<br/>
-                As extra / bonus challenge, I performed the following tasks: I used a Bootstrap theme to customize your website; I used meaningful glyphicons / material-icons next to links in the header; I created visualization navigation on every visualizations page with an active state.                
-                </p>
+              <p>This is my overall 10th, first ‘Web’ (HTML, CSS) challenge. For this assignment / challenge, I created a visualization dashboard website using visualizations that I created in a past assignment (Python API: WeatherPy). The purpose of this project was to analyze how weather changes as you get closer to the equator. To accomplish this analysis, I first pulled data from the "OpenWeatherMap" API to assemble a dataset on over 500 cities world-wide.<br/><br/>After assembling the dataset, I used "Matplotlib" to plot various aspects of weather vs. latitude. Factors I looked at included: temperature, cloudiness, wind speed and humidity. This site provides the source data and visualizations crreated as part of the analysis, as well as explanations and descriptions of any trends and correlations witnessed.<br/></p>
             </div>
           </div>
         </div>
@@ -92,6 +91,31 @@
             <img target="_blank" src="assets/images/windmap.png" alt="Wind Map" class = "img-responsive" width = "100%" onmouseover="" style="cursor: pointer;"/>
           </a>         
         </div>
+
+        <div class="col-lg-6 col-md-3 col-sm-3">
+          <a target="_self" href="ln-nh-cloud.html">
+            <img target="_blank" src="assets/images/regression_northern_cloud_vs_lat.png" alt="Cloud Map" class = "img-responsive" width = "100%" onmouseover="" style="cursor: pointer;"/>
+          </a>
+        </div>
+
+        <div class="col-lg-6 col-md-3 col-sm-3">
+          <a target="_self" href="ln-nh-humid.html">          
+            <img target="_blank" src="assets/images/regression_northern_humid_vs_lat.png" alt="Cloud Map" class = "img-responsive" width = "100%" onmouseover="" style="cursor: pointer;"/>
+          </a>
+          </div>
+
+        <div class="col-lg-6 col-md-3 col-sm-3">
+          <a target="_self" href="ln-nh-temp.html">
+            <img target="_blank" src="assets/images/regression_northern_temp_vs_lat.png" alt="Cloud Map" class = "img-responsive" width = "100%" onmouseover="" style="cursor: pointer;"/>
+          </a>
+        </div>
+
+        <div class="col-lg-6 col-md-3 col-sm-3">
+          <a target="_self" href="ln-nh-wind.html">
+            <img target="_blank" src="assets/images/regression_northern_wind_vs_lat.png" alt="Cloud Map" class = "img-responsive" width = "100%" onmouseover="" style="cursor: pointer;"/>
+          </a>
+        </div>        
+
        </div>
       </div></div>
   </section> 
