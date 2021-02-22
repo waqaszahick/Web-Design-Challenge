@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>WeatherPy</title>
+  <meta name="viewport" content="width=device=width, initial-scale=1">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/journal/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-primary">
+    <a class="navbar-brand" href="index.html"><span class="sr-only">(current)</span>WeatherPy<br/>Web Challenge: Web Design, Web Visualization Dashboard</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Plot
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" target="_self" href="temperature.html"><i class="material-icons" style="font-size: 15px" style="color:blue">ac_unit</i> Max Temperature</a>
+            <a class="dropdown-item" target="_self" href="humidity.html"><i class="material-icons" style="font-size: 15px" style="color:blue">opacity</i> Humidity</a>
+            <a class="dropdown-item" target="_self" href="cloud.html"><i class="material-icons" style="font-size: 15px" style="color:blue">cloud</i> Cloudiness</a>            
+            <a class="dropdown-item" target="_self" href="wind.html"><i class="material-icons" style="font-size: 15px" style="color:blue">tour</i> Wind Speed</a>
+          </div>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="comparison.html" ><span class="sr-only">(current)</span>Comparison</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" target="_self" href="data.html">Data</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <section class="container-fluid mt-5 pt-5">
+    <h1 style="color: #0A978A;">Comparison: Latitude vs X</h1>
+    <hr/>
+    <p>Click any plot to get an in-depth analysis</p>
+    <div class="row">
+      <div class="col-lg-6 col-md-12 col-sm-12">
+        <p class="title">vs. Temperature Map</p>
+        <a target="_self" href="temperature.html">
+          <img target="_blank" src="assets/images/temperaturemap.png" alt="Tempurature Map" class = "img-responsive" width = "100%"/>
+        </a>
+       
+      </div>
+      <div class="col-lg-6 col-md-12 col-sm-12" >
+        <p class="title">vs. Humidity Map</p>
+        <a target="_self" href="humidity.html" >
+          <img src="assets/images/humiditymap.png" alt="Humidity Map" class = "img-responsive" width = "100%"/>
+        </a>
+      </div>
+      <div class="col-lg-6 col-md-12 col-sm-12">
+        <p class="title">vs. Cloudy Map</p>
+        <a target="_self" href="cloud.html">
+          <img src="assets/images/cloudymap.png" alt="Cloudy Map" class = "img-responsive" width = "100%"/>
+        </a>
+      </div>
+      <div class="col-lg-6 col-md-12 col-sm-12">
+        <p class="title">vs. Wind Speed</p>
+        <a target="_self" href="wind.html">
+          <img src="assets/images/windmap.png" alt="Wind Map" class = "img-responsive" width = "100%"/>
+        </a>
+      </div>
+    </div>
+  </section>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+
+</html>

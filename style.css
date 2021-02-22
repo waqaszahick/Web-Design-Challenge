@@ -1,0 +1,25 @@
+.box {
+  height: 400px;
+  padding: 20px;
+  color: #fff;
+  background: deepskyblue;
+}
+
+.margin-top-80 {
+  margin-top: 80px;
+}
+
+.title{
+  color: #0A978A;
+  text-align: center;
+  font-weight: bold;
+}
+
+.graph-image{
+  float:left;
+  width: 40%;
+}
+
+.desc{
+  display: none;
+}
